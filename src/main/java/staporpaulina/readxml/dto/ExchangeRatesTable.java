@@ -1,4 +1,4 @@
-package staporpaulina.readxml;
+package staporpaulina.readxml.dto;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
@@ -19,6 +19,6 @@ public class ExchangeRatesTable {
     @JacksonXmlProperty(localName = "EffectiveDate")
     private String effectiveDate;
     @JacksonXmlProperty(localName = "Rate")
-    @JacksonXmlElementWrapper
+    @JacksonXmlElementWrapper(localName = "Rates")
     private List<RateDTO> rates;
 }

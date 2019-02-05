@@ -1,8 +1,8 @@
-package staporpaulina.readxml;
+package staporpaulina.readxml.mapper;
 
 import org.springframework.stereotype.Service;
-import staporpaulina.readxml.RateDTO;
-import staporpaulina.readxml.RateModel;
+import staporpaulina.readxml.dto.RateDTO;
+import staporpaulina.readxml.model.RateModel;
 
 @Service
 public class RateMapper {

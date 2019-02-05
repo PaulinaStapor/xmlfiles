@@ -1,10 +1,12 @@
-package staporpaulina.readxml;
+package staporpaulina.readxml.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import staporpaulina.readxml.dto.ArrayOfExchangeRatesTable;
+import staporpaulina.readxml.service.XmlService;
 
 import java.io.IOException;
 
@@ -16,7 +18,7 @@ public class XmlController {
     private ArrayOfExchangeRatesTable arrayOfExchangeRatesTable;
 
     @Autowired
-    public XmlController(XmlService xmlService, ArrayOfExchangeRatesTable arrayOfExchangeRatesTable) {
+    public XmlController(XmlService xmlService) {
         this.xmlService = xmlService;
         this.arrayOfExchangeRatesTable = arrayOfExchangeRatesTable;
     }

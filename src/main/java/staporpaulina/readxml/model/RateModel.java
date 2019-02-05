@@ -1,4 +1,4 @@
-package staporpaulina.readxml;
+package staporpaulina.readxml.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.EqualsAndHashCode;
